@@ -499,7 +499,7 @@ transform: translateX(0)
     padding: 1em 1em;
     width: 50%;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 1em;
     /*background-color: var(--clr-accent);*/
     outline-offset: 2px;
     box-shadow: var(--bs);
