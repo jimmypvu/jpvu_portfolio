@@ -11,9 +11,9 @@ navLinks.forEach(link=>{
     })
 })
 
-document.body.addEventListener("keypress", function(e){
-        if(e.key === "ESC"){
-            document.nav.classList.remove('nav-open');
+document.addEventListener('keydown', function(e){
+        if(e.key === "Escape"){
+            document.body.classList.remove('nav-open');
         }
     }
 )

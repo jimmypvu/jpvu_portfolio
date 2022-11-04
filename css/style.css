@@ -169,6 +169,10 @@ strong {
     margin-top: -1.5em;
 }
 
+a.logo{
+    margin-left:0em;
+}
+
 @media (max-width:600px){
     .logo-pic{margin-top: -1em;}
     .logo{transform: scale(1.0);}
