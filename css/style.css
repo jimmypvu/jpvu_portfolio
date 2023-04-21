@@ -149,8 +149,8 @@ strong {
 /*header section*/
 
 .header{
-    position: sticky;
-    position:-webkit-sticky;
+    /* position: sticky;
+    position:-webkit-sticky; */
     top: 0;
     background-color: var(--clr-accent);
     z-index: 9999;
