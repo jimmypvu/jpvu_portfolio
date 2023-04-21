@@ -13,7 +13,9 @@
 
         <script src="https://kit.fontawesome.com/f10ee0ab0b.js" crossorigin="anonymous"></script>
         <!--<script type="text/javascript" defer src="js/main.js"></script>-->
-
+        <!--twilio phone input API-->
+        <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+        <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
         <!--fonts-->
         <link href="https://fonts.googleapis.com/css?family=Soutce+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         <!--<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -181,9 +183,13 @@
         <footer class="footer" id="contact">
             <!--contact email-->
             <p class="contact">Ready for <span class="contact__accent">your next project?</span> Send me a message and <span class="contact__accent">let's work together!</span></p>
-            <form class="contact__form">
-                <input required class="email" type="text" placeholder="Email" />
-                <textarea required class="contact__message" placeholder="What services are you interested in?"></textarea>
+            <form class="contact__form" onsubmit="sendEmail(); reset(); return false;">
+                <input required class="name contact__input" type="text" placeholder="Name" id="name"/>
+                <input required class="email contact__input" type="text" placeholder="Email" id="email"/>
+                <div class="phone__input contact__input">
+                    <input class="phone contact__input" name="phone" type="text" id="phone" placeholder="Phone number (optional)"/>
+                </div>
+                <textarea required class="contact__message" id="message" placeholder="What services can we help you with?"></textarea>
                 <button type="submit" class="contact__message--submit btn">Send</button>
             </form>
             
@@ -205,5 +211,19 @@
         </footer>
 
         <script type="text/javascript" src="js/main.js"></script>
+        <script src"https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "jimmyphuvu@gmail.com",
+                Password : "97BDDF0C0A6093ADB6F82CC64C49BAFDE638",
+                To : 'jimmyphuvu@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Submission",
+                Body : "Test Body"
+            }).then(
+            message => alert("Message Sent Successfully")
+            );}
+        </script>
     </body>
 </html>
