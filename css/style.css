@@ -85,7 +85,7 @@ img {
 }
 
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.07);
     background: rgba(255, 198, 4, .90);
     color: var(--clr-light);
     outline: 2px solid var(--clr-accent);
@@ -475,22 +475,22 @@ header{
     margin: 1.125em auto;
     text-decoration: none;
     /* border-radius: .5em; */
-    outline: 2px solid var(--clr-light);
-    outline-offset: 2px;
+    outline: 1.5px solid var(--clr-light);
+    outline-offset: 1.5px;
     opacity: .75;
 
 }
 
 .portfolio__img:hover{
-    transform: scale(1.2);
-    transition: transform 300ms ease-in-out;
+    transform: scale(1.07);
+    transition: transform 200ms ease-in-out;
     /* border-radius: .5em; */
     opacity: 1;
-    outline: 2px solid rgba(255, 198, 4, 1);
+    outline: 1.5px solid rgba(255, 198, 4, 1);
 }
 
 .portfolio__img{
-    transition: transform 300ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+    transition: transform 200ms cubic-bezier(.5, 0, .5, 1), opacity 200ms linear;
     /* border-radius: .5em; */
 }
 
@@ -504,7 +504,7 @@ header{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
-    transition: transform 300ms ease-in-out;
+    /* transition: transform 300ms ease-in-out; */
     /* border-radius: .5em; */
     outline: 0 solid var(--clr-light);
     padding: 1em 1em;
