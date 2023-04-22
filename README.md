@@ -1,4 +1,4 @@
 # portfolio_page
-my portfolio page (WIP)
+my portfolio page
 
-jimmypvu.github.io/portfolio_page/
+https://jimmypvu.github.io/jpvu_portfolio/
