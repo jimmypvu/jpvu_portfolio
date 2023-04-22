@@ -55,26 +55,17 @@
             <div class="services">
                 <div class="service">
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat.</p>
+                    <p>Web development services to create professional and effective websites tailored to small businesses. Offering solutions for e-commerce and service-based businesses, website design, website maintenance, and more. My solutions are optimized for search engines and page ranking to help drive more customers to your business. Let me build you a website that sets you apart from the competition and attracts more customers</p>
                 </div><!--service-->
 
                 <div class="service">
                     <h3>Quality Assurance & Automation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat.</p>
+                    <p>QA automation services for testing web applications to ensure they are of the highest quality. I use automated testing tools to identify bugs and defects quickly and efficiently, and I am experienced in designing and executing effective test plans and test cases. I work closely with clients to understand their requirements and provide customized solutions. Let me help you deliver a flawless web application that meets your users' needs and exceeds their expectations</p>
                 </div><!--service-->
 
                 <div class="service">
                     <h3>Mobile App Testing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat.</p>
+                    <p>Mobile app testing services to ensure that your app is user-friendly, high-performing, and error-free. I identify bugs and ensure your app works seamlessly across different devices and platforms. Testing covers all aspects of the app, including functionality, usability, and performance, and I work closely with you to understand your users' needs in order to deliver a top-quality mobile app that drives business success</p>
                 </div><!--/service-->
             </div><!--/services-->
 
@@ -88,14 +79,8 @@
             <p class="section__subtitle section__subtitle--about">a webdev and SDET out of Los Angeles</p>
 
             <div class="'about-me__body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat.</p>
+                <p>As a former finance professional, I never imagined that I would find my passion in the tech industry. However, a few years ago, I discovered my love for web development and software testing, and I haven't looked back since. I find the industry endlessly fascinating, and I am constantly learning and growing as a developer and automation tester.</p>
+                <p>With my background in finance, I bring a unique perspective to my work in tech. I am able to understand the needs of businesses and users and translate them into effective web development and software testing solutions. I am passionate about creating high-quality and user-friendly websites and apps that make a real difference in people's lives. Whether I'm designing a website or testing a mobile app, I always strive to exceed my clients' expectations and deliver results that they can be proud of.</p>
             </div>
 
             <img src="img/IMG_1774 (1).jpeg" alt="me and mom xmas '22" class="about-me__img">
@@ -180,7 +165,7 @@
         <footer class="footer" id="contact">
             <!--contact email-->
             <p class="contact">Ready for <span class="contact__accent">your next project?</span> Send me a message and <span class="contact__accent">let's work together!</span></p>
-            <form class="contact__form" action="https://formsubmit.co/bfe97987867a55247480e9d515235fbf" method="POST">
+            <form name="contact_form" class="contact__form" action="https://formsubmit.co/bfe97987867a55247480e9d515235fbf" method="POST">
                 <input required class="name contact__input" type="text" placeholder="Name" id="name" name="name"/>
                 <input required class="email contact__input" type="text" placeholder="Email" id="email" name="email"/>
                 <div class="phone__input contact__input">
@@ -190,7 +175,7 @@
                 <input type="text" name="_honey" style="display:none">
                 <input type="hidden" name="_next" value="https://jimmypvu.github.io/jpvu_portfolio/thankyou.html">
                 <textarea required class="contact__message" id="message" name="message" placeholder="What services can we help you with?"></textarea>
-                <button type="submit" class="contact__message--submit btn">Send</button>
+                <button type="submit" class="contact__message--submit btn" onclick="validateForm(document.contact_form.email);">Send</button>
             </form>
             
             <a href="mailtto:jimmyphuvu@gmail.com" class="footer-link">jimmyphuvu@gmail.com</a>
