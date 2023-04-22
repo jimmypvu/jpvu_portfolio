@@ -183,13 +183,13 @@
         <footer class="footer" id="contact">
             <!--contact email-->
             <p class="contact">Ready for <span class="contact__accent">your next project?</span> Send me a message and <span class="contact__accent">let's work together!</span></p>
-            <form class="contact__form" onsubmit="sendEmail(); reset(); return false;">
-                <input required class="name contact__input" type="text" placeholder="Name" id="name"/>
-                <input required class="email contact__input" type="text" placeholder="Email" id="email"/>
+            <form class="contact__form" action="https://formsubmit.co/jimmyphuvu@gmail.com" method="POST">
+                <input required class="name contact__input" type="text" placeholder="Name" id="name" name="name"/>
+                <input required class="email contact__input" type="text" placeholder="Email" id="email" name="email"/>
                 <div class="phone__input contact__input">
                     <input class="phone contact__input" name="phone" type="text" id="phone" placeholder="Phone number (optional)"/>
                 </div>
-                <textarea required class="contact__message" id="message" placeholder="What services can we help you with?"></textarea>
+                <textarea required class="contact__message" id="message" name="message" placeholder="What services can we help you with?"></textarea>
                 <button type="submit" class="contact__message--submit btn">Send</button>
             </form>
             
@@ -211,17 +211,5 @@
         </footer>
 
         <script type="text/javascript" src="js/main.js"></script>
-        <script src"https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail(){Email.send({
-                SecureToken: "f26b6be2-916d-4864-b4c0-b8e12d4c787f",
-                To : 'jimmyphuvu@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Submission",
-                Body : "Test"
-            }).then(
-            message => alert("Message Sent Successfully")
-            );}
-        </script>
     </body>
 </html>
