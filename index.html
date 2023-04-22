@@ -183,7 +183,7 @@
         <footer class="footer" id="contact">
             <!--contact email-->
             <p class="contact">Ready for <span class="contact__accent">your next project?</span> Send me a message and <span class="contact__accent">let's work together!</span></p>
-            <form class="contact__form">
+            <form class="contact__form" action="https://formsubmit.co/your-random-string" method="POST">
                 <input required class="name contact__input" type="text" placeholder="Name" id="name" name="name"/>
                 <input required class="email contact__input" type="text" placeholder="Email" id="email" name="email"/>
                 <div class="phone__input contact__input" name="twiliophonecode">
@@ -191,6 +191,7 @@
                 </div>
                 <textarea required class="contact__message" id="message" name="message" placeholder="What services can we help you with?"></textarea>
                 <button type="submit" class="contact__message--submit btn">Send</button>
+                <input type="hidden" name="_url" value="https://jimmypvu.github.io/portfolio_page/">
             </form>
             
             <a href="mailtto:jimmypvu@gmail.com" class="footer-link">jimmyphuvu@gmail.com</a>
