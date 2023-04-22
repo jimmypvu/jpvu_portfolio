@@ -3,24 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>jpVu.dev - My Portfolio</title>
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
-
-        <script src="https://kit.fontawesome.com/f10ee0ab0b.js" crossorigin="anonymous"></script>
-        <!--<script type="text/javascript" defer src="js/main.js"></script>-->
         <!--twilio phone input API-->
         <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
         <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
         <!--fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Soutce+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> -->
+        <!--icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/f10ee0ab0b.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header">
@@ -48,7 +45,7 @@
             <h1 class="section__title section__title--intro">
                 Hi, I'm <strong>Jimmy Vu</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">a QA automation engineer & webdev</p>
+            <p class="section__subtitle section__subtitle--intro">webdev & QA automation</p>
             <img src="img/myAvatar.svg" alt="a picture of me smiling" class="intro__img">
         </section>
 
@@ -88,7 +85,7 @@
         <!--about me-->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">a webdev and SDET based out of Los Angeles</p>
+            <p class="section__subtitle section__subtitle--about">a webdev and SDET out of Los Angeles</p>
 
             <div class="'about-me__body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -183,10 +180,10 @@
         <footer class="footer" id="contact">
             <!--contact email-->
             <p class="contact">Ready for <span class="contact__accent">your next project?</span> Send me a message and <span class="contact__accent">let's work together!</span></p>
-            <form class="contact__form" action="https://formsubmit.co/bfe97987867a55247480e9d515235fbf" method="POST" onsubmit="thankYou()">
+            <form class="contact__form" action="https://formsubmit.co/bfe97987867a55247480e9d515235fbf" method="POST">
                 <input required class="name contact__input" type="text" placeholder="Name" id="name" name="name"/>
                 <input required class="email contact__input" type="text" placeholder="Email" id="email" name="email"/>
-                <div class="phone__input contact__input" name="twiliophonecode">
+                <div class="phone__input contact__input">
                     <input class="phone contact__input" name="phone" type="text" id="phone" placeholder="Phone number (optional)"/>
                 </div>
                 <input type="hidden" name="_captcha" value="false">
@@ -198,26 +195,21 @@
             
             <a href="mailtto:jimmyphuvu@gmail.com" class="footer-link">jimmyphuvu@gmail.com</a>
             <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/jimmyphuvu/">
                     <i class="fa-brands fa-linkedin"></i>
                 </a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/jimmypvu">
                     <i class="fa-brands fa-github"></i>
                 </a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">
+                <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/jimmeevuu">
                     <i class="fa-brands fa-twitter"></i>
                 </a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">
+                <li class="social-list__item"><a class="social-list__link" href="https://discordapp.com/users/347966390214459395">
                     <i class="fa-brands fa-discord"></i>
                 </a></li>
             </ul>
         </footer>
 
         <script type="text/javascript" src="js/main.js"></script>
-        <script>
-            function thankYou(){
-                alert("Message Sent Successfully");
-            }
-        </script>
     </body>
 </html>
